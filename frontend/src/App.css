@@ -1,0 +1,25 @@
+.bg-img-home-1{
+background-image: url(https://img.freepik.com/premium-photo/handmade-ceramic-tableware-light-linen-background_233226-287.jpg);
+  background-size:cover ;
+  height: 85vh;
+}
+.bg-img-login{
+   background-image: url(https://images.squarespace-cdn.com/content/v1/6442e77bd742137cdac58347/96a020d4-90ef-495f-bcb2-c7d77194c6b7/AdobeStock_332696922.jpeg);
+  background-size:cover ;
+  height: 80vh;
+}
+.login-card{
+  width: 40%;
+  height: 60%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.input-login::placeholder{
+  color: white;
+  font-family: cursive;
+  font-size: 25px;
+}
