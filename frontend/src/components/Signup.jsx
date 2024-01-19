@@ -63,23 +63,23 @@ const Signup = () => {
     })
     return (
         <div className="bg-img-signup">
-            {/* <div className="card bg-dark bg-opacity-25" style={{height:"100vh",border:"none"}}> */}
-            <div className='row '>
+            <div className='row bg-img-login'>
                 <div className="col">
-                    <div className="card login-card  bg-light bg-opacity-25">
-                        <div className="card-header">
-                            <h3 className='text-center mt-3 signup-heading'>Signup</h3>
-                            <p className="text-center fs-5">Already a customer? <Link to="/Login" >Login</Link></p>
+                    <div className="card   bg-dark bg-opacity-25" style={{height:"80vh",border:"none"}}>
+                    <div className="card login-card p-5">
 
-                        </div>
                         <div className="card-body">
+                            <h1 className='text-center text-white fw-bold ' style={{fontFamily:"serif"}}>Signup</h1>
+                            <p className="text-center text-white fs-5">Already a customer? <Link to="/Login" >Login</Link></p>
+
+                       
                             {/* step3 : handling when submit */}
-                            <form onSubmit={SignupForm.handleSubmit} className='w-75'>
+                            <form onSubmit={SignupForm.handleSubmit}>
                                 {/* step2 : main form handling */}
                                 <div className="form-group">
 
                                     <span style={{ color: 'red', fontsize: '10', marginLeft: '50' }}>{SignupForm.touched.name && SignupForm.errors.name}</span>
-                                    <input type="text" className="form-control"
+                                    <input type="text" className="form-control text-white bg-transparent mb-3 input-login"
                                         placeholder="username" id="name"
                                         onChange={SignupForm.handleChange}
                                         value={SignupForm.values.name} />
@@ -87,7 +87,7 @@ const Signup = () => {
                                 <div className="form-group">
 
                                     <span style={{ color: 'red', fontsize: '10', marginLeft: '50' }}>{SignupForm.touched.email && SignupForm.errors.email}</span>
-                                    <input type="text" className="form-control"
+                                    <input type="text" className="form-control text-white bg-transparent mb-3 input-login"
                                         id="email" placeholder='email'
                                         onChange={SignupForm.handleChange}
                                         value={SignupForm.values.email} />
@@ -95,19 +95,19 @@ const Signup = () => {
                                 <div className="form-group">
 
                                     <span style={{ color: 'red', fontsize: '10', marginLeft: '50' }}>{SignupForm.touched.password && SignupForm.errors.password}</span>
-                                    <input type="password" className="form-control"
+                                    <input type="password" className="form-control text-white bg-transparent mb-3 input-login"
                                         id="password" placeholder='password'
                                         onChange={SignupForm.handleChange}
                                         value={SignupForm.values.password} />
                                 </div>
-                                <button type='submit' className="btn btn-primary w-100 mt-3 fs-4 p-1 mt-4 " style={{ marginLeft: "50px", borderRadius: "20px", fontFamily: "serif" }}>Signup</button>
+                                <button type='submit' className='btn btn-light w-100   mt-4 fs-4 p-1 text-secondary fw-semibold'  style={{  borderRadius: "20px", fontFamily: "serif" }}>Signup</button>
                             </form>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
-        // </div>
     )
 }
 

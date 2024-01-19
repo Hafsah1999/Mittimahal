@@ -16,10 +16,11 @@ background-image: url(https://img.freepik.com/premium-photo/handmade-ceramic-tab
   display: flex;
   justify-content: center;
   align-items: center;
-
+margin-left: 100px;
+margin-top: 50px;
 }
 .input-login::placeholder{
   color: white;
   font-family: cursive;
-  font-size: 25px;
+  font-size: 20px;
 }
