@@ -24,3 +24,8 @@ margin-top: 50px;
   font-family: cursive;
   font-size: 20px;
 }
+.text-categories{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #264653;
+}

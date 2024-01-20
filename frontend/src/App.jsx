@@ -8,6 +8,11 @@ import Addproduct from './components/AddProduct'
 import Browse from './components/Browse'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
+import Showpiece from './components/Showpiece'
+import UpdateProduct from './components/UpdateProduct'
+import Utensil from './components/Utensil'
+import Watercontainer from './components/Watercontainer'
+import Decoration from './components/Decoration'
 
 const App = () => {
   return (
@@ -24,6 +29,16 @@ const App = () => {
           <Route path="/AddProduct" element={<Addproduct />} />
           <Route path="/Browse" element={<Browse />}></Route>
           <Route path="/Home" element={<Home />} />
+          <Route path="/Showpiece" element={<Showpiece />} />
+          <Route path="/UpdateProduct" element={<UpdateProduct />} />
+          <Route path="/Utensil" element={<Utensil />} />
+          <Route path="/Watercontainer" element={<Watercontainer />} />
+          <Route path="/Decoration" element={<Decoration />} />
+
+
+
+          
+
 
         </Routes>
       </BrowserRouter>
