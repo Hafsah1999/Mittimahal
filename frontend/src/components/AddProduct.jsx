@@ -103,9 +103,9 @@ const Addproduct = () => {
                 <tr>
                     <td>{obj.pname}</td>
                     <td>{obj.pdetail}</td>
-<td>{obj.pprice}</td>
+                    <td>{obj.pprice}</td>
 
-<td>{obj.pcategory}</td>
+                    <td>{obj.pcategory}</td>
 
                     <td>
                         <button className="btn btn-danger" onClick={() => { deleteFuction(obj._id) }}>Delete</button>

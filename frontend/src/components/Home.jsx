@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-
+import { Link } from 'react-router-dom'
 // import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
 
@@ -31,8 +31,8 @@ const Home = () => {
         <h3 className="text-categories">TOP CATEGORIES</h3>
         <div className="row">
           <div className="col">
-            <h4 className="mt-4 mb-4" style={{ fontFamily: "serif", color: "brown" }}>Showpieces</h4>
-            <>
+            <Link to='/Showpieces' className='nav-link'><h4 className="mt-4 mb-4" style={{ fontFamily: "serif", color: "brown" }}>Showpieces</h4>
+            </Link> <>
               <Swiper
                 slidesPerView={5}
                 spaceBetween={30}
@@ -75,13 +75,13 @@ const Home = () => {
           </div>
 
           <div className="col">
-            <h4 className="mt-4 mb-4" style={{ fontFamily: "serif", color: "brown" }}>Utensils</h4>
-            <>
+           <Link to="/Utensils" className='nav-link'> <h4 className="mt-4 mb-4" style={{ fontFamily: "serif", color: "brown" }}>Utensils</h4>
+           </Link> <>
               <Swiper
                 slidesPerView={5}
                 spaceBetween={30}
                 autoplay={{
-                  delay: 2000,
+                  delay: 2500,
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay, Pagination]}
@@ -97,22 +97,65 @@ const Home = () => {
                   <img src="https://anuna.com/images/detailed/48/dahi_handi_designn.jpg" style={{ height: "220px", width: "220px" }} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://www.handmakers.in/cdn/shop/products/IMG20220302140733.jpg?v=1646288775&width=533" style={{ height: "220px", width: "220px" }} alt="" />
+                  <img src="https://i.pinimg.com/236x/4f/ce/42/4fce42ced4b1abb0c415f623a05c3aa1.jpg" style={{ height: "220px", width: "220px" }} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src="https://rukminim2.flixcart.com/image/1100/1300/knj7wcw0/cup-saucer/q/z/5/large-cup-glazed-all-desi-original-imag26w9whnhuesf.jpeg?q=20&crop=false" style={{ height: "220px", width: "220px" }} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://i.pinimg.com/564x/ae/4d/f6/ae4df69e0d1cef169e2c48a0af2b8fed.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                  <img src="https://th.bing.com/th/id/OIP.TediLQR6bzpTaW__0FHXgAHaFU?pid=ImgDet&w=182&h=130&c=7" style={{ height: "220px", width: "220px" }} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://i.pinimg.com/564x/ca/11/39/ca113928fee8288a876b3fd895aac2da.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                  <img src="https://th.bing.com/th/id/OIP.fze3Gxz9rQUihPxItRpANgHaHa?pid=ImgDet&w=182&h=182&c=7" style={{ height: "220px", width: "220px" }} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://i.pinimg.com/564x/fd/52/eb/fd52eb52e2ecbe0dffd82456e36c9b8a.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                  <img src="https://th.bing.com/th/id/OIP.xeLYNewtPJlaOuFtcfd1agHaHa?w=159&h=180&c=7&r=0&o=5&pid=1.7" style={{ height: "220px", width: "220px" }} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://i.pinimg.com/564x/e8/60/4c/e8604c445e16d1d766a27b0565c6263f.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                  <img src="https://th.bing.com/th/id/OIP.vmWoFdeVsSnP6NUopKkDQwHaHa?w=169&h=180&c=7&r=0&o=5&pid=1.7" style={{ height: "220px", width: "220px" }} alt="" />
+                </SwiperSlide>
+              </Swiper>
+            </>
+          </div>
+          <div className="col">
+            <Link to="/Watercontainer" className='nav-link'><h4 className="mt-4 mb-4" style={{ fontFamily: "serif", color: "brown" }}>Water Containers</h4>
+            </Link> <>
+              <Swiper
+                slidesPerView={5}
+                spaceBetween={30}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay, Pagination]}
+                className="mySwiper mb-5 "
+              >
+                <SwiperSlide>
+                  <img src="https://i.pinimg.com/236x/aa/79/14/aa7914221888f2bd1609c40467c8a1a9.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://i.pinimg.com/236x/8b/ed/e8/8bede8382fd79fa1ef567ab4f944bfbe.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://i.pinimg.com/236x/8b/f6/25/8bf6254bf3b89bf8bb589048ba5e7b4f.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://i.pinimg.com/236x/a1/01/82/a10182529ddfb5d7842f77d22a783980.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://i.pinimg.com/236x/75/79/75/757975cf0de7956448c9c54c2cd1c45b.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://i.pinimg.com/236x/6d/55/c1/6d55c13cc68f3f59288f893202d85833.jpg" style={{ height: "220px", width: "220px" }} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmhaw8hfCRqBrKXBjsNk-rW37RPJGKk5YnGQ&usqp=CAU" style={{ height: "220px", width: "220px" }} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGbFqGwWk0w3icb9PFBtmnmoLzftVaOx5otA&usqp=CAU" style={{ height: "220px", width: "220px" }} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://i.pinimg.com/236x/c5/37/e5/c537e5d249608fe83c733360fc96615c.jpg" style={{ height: "220px", width: "220px" }} alt="" />
                 </SwiperSlide>
               </Swiper>
             </>

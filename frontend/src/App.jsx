@@ -13,14 +13,19 @@ import UpdateProduct from './components/UpdateProduct'
 import Utensil from './components/Utensil'
 import Watercontainer from './components/Watercontainer'
 import Decoration from './components/Decoration'
+import PageNotFound from './components/PageNotFound'
+import About from './components/About'
 
 const App = () => {
+  
   return (
     <>
 
       <BrowserRouter>
       <Navbar />
         <Routes>
+        <Route path="*" element={<PageNotFound />} />
+
           <Route path="/" element={<Home />} />
           <Route path="/Feedback" element={<Feedback />} />
           <Route path="/Contact" element={<Contact />} />
@@ -34,6 +39,7 @@ const App = () => {
           <Route path="/Utensil" element={<Utensil />} />
           <Route path="/Watercontainer" element={<Watercontainer />} />
           <Route path="/Decoration" element={<Decoration />} />
+          <Route path="/About" element={<About />} />
 
 
 

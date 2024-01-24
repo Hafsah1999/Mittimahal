@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 
 const Navbar = () => {
+  
   return (
     <>
     <header className="py-1  bg-dark bg-opacity-25">
@@ -34,6 +35,11 @@ const Navbar = () => {
       <li className="nav-item">
         <Link to="/Contact" className="nav-link link-danger fs-5 fw-semibold px-2">
             <font style={{ verticalAlign: "inherit" }}>Contact</font>
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link to="/About" className="nav-link link-danger fs-5 fw-semibold px-2">
+            <font style={{ verticalAlign: "inherit" }}>About</font>
         </Link>
       </li>
      
